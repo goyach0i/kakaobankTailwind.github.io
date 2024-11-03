@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root {
+  --site-width: 1080px;
+  --site-background-color: #ffef6b;
+}
+
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+#wrap {
+  min-width: var(--site-width);
+}
+
+/* header */
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.con {
+  width: var(--site-width);
+  min-width: var(--site-width);
+}
+
+.nav > ul > li > .sub-menu {
+  display: block;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.nav > ul > li.active > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 영문 사이트 */
+.ing-pop {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.ing-pop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ing-pop > .msg {
+  z-index: 20;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup__btn-close {
+  transition: all 0.2s;
+}
+
+.popup__btn-close::before,
+.popup__btn-close::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  transform: rotate(-45deg);
+  transition: all 0.2s;
+}
+
+.popup__btn-close::after {
+  transform: rotate(45deg);
+}
+
+.popup__btn-close:hover::before,
+.popup__btn-close:hover::after {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup__btn-close:hover::before {
+  transform: rotate(-40deg);
+}
+
+.popup__btn-close:hover::after {
+  transform: rotate(50deg);
+}
+
+html.actived {
+  overflow-y: hidden;
+}
+
+/* 섹션 1 */
+.section-1 {
+  height: 884px;
+  background-color: #fff;
+}
+
+/* 섹션 1 색상 배경 라인 맞추기 */
+.section-1 > .background-line {
+  height: 720px;
+  background-color: var(--site-background-color);
+}
+
+.section-1 > .con {
+  width: 1200px;
+  background-image: url(https://kakaobank.com/static/images/web/renewal/main-bg3.png);
+}
+
+/* 구글플레이 로고 */
+.section-1 > .con > ul > li > a > .logo {
+  display: block;
+  overflow: hidden;
+  background: url(https://kakaobank.com/static/images/web/img_kabang_220615.png)
+    no-repeat;
+}
+.section-1 > .con > ul > li > a > .logo {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: -2px 10px 0 0;
+  background-position: -341px -292px;
+  text-indent: 0;
+  vertical-align: middle;
+}
+
+/* 애플 로고 */
+.section-1 > .con > ul > li > a > .app {
+  background-position: -371px -292px;
+}
+
+/* 관련 사이트 클릭 */
+/* 클릭 시 화살표 */
+.menu-btn:after {
+  content: '';
+  display: inline-block;
+  margin-left: 10px;
+  width: 12px;
+  height: 12px;
+  background: url(https://www.kakaobank.com/static/images/web/svg_line_arrow_down.svg);
+  background-size: 12px 12px;
+  vertical-align: baseline;
+  transform: rotate(0);
+  transition: all 0.3s;
+}
+
+/* 클릭 시 화살표 회전 */
+.menu-btn.active:after {
+  transform: rotate(-180deg);
+}
+
+/* 버튼 클릭 시 생기는 포커스 효과 제거 */
+.menu-btn:focus {
+  outline: 0;
+}
+
+.menu-btn_site {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.menu-btn_site.active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.menu-btn_site > ul > li > a:after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(https://kakaobank.com/static/images/web/svg_line_outlink.svg);
+  background-size: 12px 12px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* 섹션2 */
+.section-2 {
+  height: 750px;
+}
+
+.section-2 > img {
+  width: 473px;
+}
+
+.cont-box_btn > a > img {
+  width: 6px;
+  height: 9px;
+}
+
+/* 섹션 3 */
+.btn-box a:after {
+  content: '';
+  display: inline-block;
+  margin-left: 5px;
+  width: 12px;
+  height: 12px;
+  background: url(https://www.kakaobank.com/static/images/web/svg_line_arrow_down.svg);
+  background-size: 12px 12px;
+  vertical-align: baseline;
+  transform: rotate(270deg);
+}
+
+.intro-box > img {
+  width: 440px;
+}
+
+/* 섹션4 */
+.section-4 > .img-box > img {
+  width: 459px;
+}

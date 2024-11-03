@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.kakaobank.com/static/images/favicon/B16.gif"
+    />
+    <title>카카오뱅크</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header class="fixed h-20 w-full inset-0 z-20 bg-white">
+        <div class="con mx-auto h-full flex items-center">
+          <div class="logo h-full flex items-center">
+            <a href="#">
+              <img
+                src="https://www.kakaobank.com/static/images/web/logo_black.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="flex-grow"></div>
+          <div class="nav h-full">
+            <ul class="h-full flex">
+              <li
+                class="nav-list h-full flex items-center mx-3 px-3 border-black border-b-2 border-opacity-0 hover:border-opacity-100"
+              >
+                <a
+                  href="#"
+                  class="h-full flex items-center inline-block hover:underline"
+                  >은행소개</a
+                >
+                <div
+                  class="sub-menu absolute z-10 top-full bg-white left-0 right-0 py-16 shadow-lg"
+                >
+                  <div class="con mx-auto flex">
+                    <div
+                      class="sub-menu-links w-1/4 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >카카오뱅크</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm">브랜드</a>
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >주주사 소개</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >오시는 길</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >제휴문의</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >금융기술연구소</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >카카오뱅크 인증서</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/4 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >윤리경영</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >윤리강령</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >임직원행동기준</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/4 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >카카오뱅크</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >공지사항</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >입찰공고</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/4 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >인재영입</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="nav-list h-full flex items-center mx-3 px-3 border-black border-b-2 border-opacity-0 hover:border-opacity-100"
+              >
+                <a
+                  href="#"
+                  class="h-full flex items-center inline-block hover:underline"
+                  >IR투자정보</a
+                >
+                <div
+                  class="sub-menu absolute z-10 top-full bg-white left-0 right-0 py-16 shadow-lg"
+                >
+                  <div class="con mx-auto flex">
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >공시정보</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >전자공시</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >경영공시</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >바첼공시</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >지배구조공시</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >기타공시</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >공시규정</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >경영정보</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm">이사회</a>
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >지속가능경영</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >재무정보</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >재무제표</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >감사보고서</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >영업보고서</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >신용등급</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >IR자료실</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >실적발표</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >추가정보</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >배당현황</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >IR일정</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm">IR행사</a>
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >IR미팅예약</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >주주총회</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >공고</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="nav-list h-full flex items-center mx-3 px-3 border-black border-b-2 border-opacity-0 hover:border-opacity-100"
+              >
+                <a
+                  href="#"
+                  class="h-full flex items-center inline-block hover:underline"
+                  >상품안내</a
+                >
+                <div
+                  class="sub-menu absolute z-10 top-full bg-white left-0 right-0 py-16 shadow-lg"
+                >
+                  <div class="con mx-auto flex">
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >통장/저축</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >입출금통장</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >모임통장</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >기록통장</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >세이프박스</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm">저금통</a>
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >정기예금</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >자유적금</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >26주적금</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >한달적금</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >대출</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >비상금대출</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >마이너스 통장대출</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >신용대출</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >중고차 구매대출</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >전월세보증금 대출</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >전월세보증금 대출 갈아타기</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >주택담보대출</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >주택담보대출 갈아타기</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >신용대출 비교하기</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >신용대출 갈아타기</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >내 신용정보</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >투자/외환</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm">펀드</a>
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >증권사 주식계좌</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >달러박스</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >해외송금 보내기</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >해외송금 받기</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >카드</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >프렌즈 체크카드</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >모임 체크카드</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >제휴 신용카드</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >혜택 좋은 신용카드</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >사업자</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >개인사업자통장</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >개인사업자 신용대출</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >개인사업자 보증서대출</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >개인사업자 체크카드</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >내 사업자 신용정보</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >사업자 인증서</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >mini</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >카카오뱅크 mini</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >mini카드</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >mini 26일저금</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="nav-list h-full flex items-center mx-3 px-3 border-black border-b-2 border-opacity-0 hover:border-opacity-100"
+              >
+                <a
+                  href="#"
+                  class="h-full flex items-center inline-block hover:underline"
+                  >고객센터</a
+                >
+                <div
+                  class="sub-menu absolute z-10 top-full bg-white left-0 right-0 py-16 shadow-lg"
+                >
+                  <div class="con mx-auto flex">
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >이용안내</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >자주 묻는 질문</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >이용시간 안내</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >ATM 이용안내</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >ATM 이용안내 (달러박스)</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >금리안내</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >금리안하요구권 안내</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >수수료안내</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >상담안내</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >채무자보호안내</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >채무조정안내</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >상담하기</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >고객의 소리</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >1:1 문의</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >소비자보호</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >소비자보호체계</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >소비자보호 우수사례</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >전자민원</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >소비자보호공시</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >민원사무편람</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >금융정보</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >보안취약점 신고 안내</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >판매대리·중개업자 증서</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >비대면 금융사고 책임분담안내</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >금융사기대응</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >금융사기예방</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >피해대처방법</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >피해신고관련서식</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >카카오뱅크 사칭제보</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >불법도박 이용계좌 신고</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >증명서</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >나의 증명서 발급내역</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >증명서 진위 확인</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="sub-menu-links w-1/6 text-center flex flex-col gap-7"
+                    >
+                      <a href="#" class="font-bold text-lg hover:underline"
+                        >약관 · 서식</a
+                      >
+                      <ul class="flex flex-col gap-3">
+                        <li>
+                          <a href="#" class="hover:underline text-sm">약관</a>
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm">서식</a>
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >상품설명서</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >상품공시</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="hover:underline text-sm"
+                            >펀드공시</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="h-full flex items-center mx-3 px-3 relative">
+                <button
+                  class="menu-btn bg-gray-200 border border-gray-400 rounded-full h-10 px-4"
+                >
+                  관련사이트
+                </button>
+                <div
+                  class="menu-btn_site absolute top-full bg-white w-56 rounded-md shadow-md mt-2 -left-1/4"
+                >
+                  <ul>
+                    <li class="hover:bg-gray-100 rounded-tr-md rounded-tl-md">
+                      <a
+                        href="#"
+                        class="block w-full h-full text-sm px-6 py-1 leading-10 hover:underline"
+                        >카카오뱅크AD</a
+                      >
+                    </li>
+                    <li class="hover:bg-gray-100">
+                      <a
+                        href="#"
+                        class="block w-full h-full text-sm px-6 py-1 leading-10 hover:underline"
+                        >카카오뱅크 인증서</a
+                      >
+                    </li>
+                    <li class="hover:bg-gray-100">
+                      <a
+                        href="#"
+                        class="block w-full h-full text-sm px-6 py-1 leading-10 hover:underline"
+                        >금융기술연구소</a
+                      >
+                    </li>
+                    <li class="hover:bg-gray-100 rounded-br-md rounded-bl-md">
+                      <a
+                        href="#"
+                        class="block w-full h-full text-sm px-6 py-1 leading-10 hover:underline"
+                        >기술블로그</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="h-full flex items-center mx-3 px-3">
+                <img class="ing hover:opacity-50 hover:cursor-pointer" src="https://www.kakaobank.com/static/images/web/icon_eng.svg" alt="">
+                <div class="ing-pop">
+                  <div class="ing-pop_bg fixed inset-0 z-20 bg-gray-600 bg-opacity-60"></div>
+                  <div class="msg fixed p-10 pb-24 bg-white shadow-lg rounded-lg flex flex-col gap-10">
+                    <div class="popup__btn-close relative w-8 h-8 ml-auto cursor-pointer"></div>
+                    <span class="font-bold">영어페이지는 아직 개발중입니다.</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="gap-box h-20"></div>
+      <section class="section-1 w-full relative">
+        <div class="background-line w-full absolute top-0"></div>
+        <div
+          class="con mx-auto h-full relative z-1 bg-no-repeat bg-contain flex flex-col pt-32 pl-20"
+        >
+          <h3 class="font-bold text-5xl leading-snug">
+            이미 모두의 은행
+            <br />
+            지금은 카카오뱅크
+          </h3>
+          <p class="text-gray-900 text-opacity-70 leading-loose mt-4">
+            한 사람, 한 사람을 위해 시작한 은행이
+            <br />
+            더 많은 사람들이 찾는 모두의 은행이 되었습니다.
+          </p>
+          <p class="text-gray-900 text-opacity-70 leading-loose mt-4">
+            보내고, 받고, 모으고, 쓰는
+            <br />
+            당신의 모든 일이 바뀌고 있습니다.
+          </p>
+          <ul class="flex gap-3 mt-10">
+            <li>
+              <a
+                href="#"
+                class="bg-white flex font-bold w-48 h-16 items-center justify-center px-4 rounded-2xl hover:underline"
+              >
+                <span class="logo"></span>
+                Google Play
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="bg-white flex font-bold w-48 h-16 items-center justify-center px-4 rounded-2xl hover:underline"
+              >
+                <span class="logo app"></span>
+                App Store
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-2 w-full flex items-center justify-center gap-28">
+        <img
+          src="https://kakaobank.com/static/images/web/renewal/main-withdrawal.png"
+          alt=""
+        />
+        <div class="cont-box h-full flex flex-col justify-center gap-6">
+          <div class="cont-box_txt flex flex-col gap-6">
+            <h3 class="font-bold text-4xl leading-snug">
+              모바일로 더 손쉬운
+              <br />
+              계좌개설, 간편한 이체
+            </h3>
+            <p>
+              인증서, OTP 없이 계좌 개설이 간편합니다.
+              <br />
+              여러 건의 이체도 몇 번의 터치로 손쉽게 보낼 수 있습니다.
+            </p>
+          </div>
+          <div class="cont-box_btn">
+            <a href="#" class="flex gap-2 items-center justify-center bg-gray-100 w-64 h-14 rounded-lg hover:underline">
+              카카오뱅크 입출금통장
+              <img src="https://kakaobank.com/static/images/web/home_arr.png" alt="">
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="margin-box w-full h-8 bg-gray-100"></div>
+      <section class="section-3 w-full flex items-center justify-center gap-20">
+        <div class="intro-box flex flex-col gap-10">
+          <h3 class="font-bold text-4xl leading-snug">
+            우대조건 없이
+            <br>
+            합리적인 예금과 적금
+          </h3>
+          <p class="opacity-70">
+            기대했던 금리와 다르게 복잡한 우대조건에 실망한 적이 있었나요?
+            <br>
+            카카오뱅크의 예금, 적금은 숨겨진 우대조건 없이 누구에게나 편리하고 합리적입니다.
+          </p>
+          <div class="btn-box">
+            <ul class="flex gap-2">
+              <li>
+                <a href="#" class="flex items-center justify-center w-40 h-12 bg-gray-100 rounded-lg hover:underline">
+                  정기예금
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center justify-center w-40 h-12 bg-gray-100 rounded-lg hover:underline">
+                  자유적금
+                </a>
+              </li>
+            </ul>
+          </div>
+          <img src="https://kakaobank.com/static/images/web/renewal/main-savings-money.png" alt="">
+        </div>
+        <div class="img-box">
+          <img src="https://kakaobank.com/static/images/web/renewal/main-savings.png" alt="" class="w-96">
+        </div>
+      </section>
+      <div class="margin-box w-full h-8 bg-gray-100"></div>
+      <section class="section-4 w-full flex items-center justify-center gap-20 py-28">
+        <div class="img-box">
+          <img src="https://kakaobank.com/static/images/web/renewal/main-moim.png" alt="" class="w-96">
+        </div>
+        <div class="intro-box flex flex-col gap-10">
+          <h3 class="font-bold text-4xl leading-snug">
+            함께 쓰고 같이 보는
+            <br>
+            모임통장
+          </h3>
+          <p class="opacity-70">
+            카카오톡 친구를 바로 모임통장으로 초대하고
+            <br>
+            친구들과 함께 잔액과 입출금 현황을 확인할 수 있습니다.
+            <br>
+            재미있는 메시지 카드로 회비 입금 요청도 해보세요.
+          </p>
+          <div class="btn-box">
+            <a href="#" class="flex items-center justify-center w-64 h-14 bg-gray-100 rounded-lg hover:underline">
+              모임통장
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="margin-box w-full h-8 bg-gray-100"></div>
+      
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
